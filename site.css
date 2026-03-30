@@ -1,0 +1,189 @@
+/* --- Global Reset & Base Styles --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #010101; 
+    color: #f0f0f0;
+    font-family: 'Noto Sans', sans-serif; 
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s ease;
+}
+
+/* --- Header Styles (Dark Frame Dev) --- */
+header {
+    background-color: #000;
+    border-bottom: 2px solid #001217; 
+    padding: 20px 0;
+    background-image: linear-gradient(#0c0d10 50%, rgba(12, 13, 16, 0.1) 50%);
+    background-size: 100% 4px;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.studio-logo {
+    font-family: 'VT323', monospace; 
+    font-size: 36px;
+    font-weight: normal;
+    color: #00ffff; 
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.6); 
+}
+
+.contact-link {
+    font-family: 'VT323', monospace;
+    font-size: 22px;
+    color: #66d9ef;
+    letter-spacing: 1px;
+}
+
+.contact-link:hover {
+    color: #00ffff;
+    text-shadow: 0 0 8px #00ffff;
+}
+
+/* --- Hero Section (Dead Letters) --- */
+.hero {
+    min-height: 85vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 60px 40px;
+}
+
+.dl-hero {
+    /* Set this to your grungy paper texture image */
+    background-color: #121214; 
+    background-image: url('dl_logo.jpg'); 
+    background-size: cover;
+    background-position: center;
+    border: 15px solid #000; 
+    box-shadow: inset 0 0 150px rgba(0,0,0,0.9); 
+}
+
+.hero-content {
+    max-width: 850px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    z-index: 2;
+}
+
+.dl-logo-container {
+    max-width: 600px;
+    margin-bottom: 10px;
+}
+
+.dl-logo {
+    width: 100%;
+    display: block;
+    /* Optional: adds a slight drop shadow to the logo so it stands out from the background */
+    filter: drop-shadow(0px 10px 15px rgba(0,0,0,0.8)); 
+}
+
+/* Updated Story Rider for the new Hook */
+.story-rider {
+    font-family: 'Old Standard TT', serif; 
+    font-size: 22px;
+    color: #e8e8e8; /* Light gray for readability */
+    max-width: 750px;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.75); /* Dark translucent box to separate text from noisy background */
+    padding: 35px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+}
+
+.story-rider p {
+    margin-bottom: 20px;
+}
+
+.story-rider p:last-child {
+    margin-bottom: 0;
+}
+
+.warning-text {
+    font-style: italic;
+    color: #cc3333; /* A muted, dried-blood red to emphasize the warning */
+}
+
+.hero-tagline {
+    font-family: 'Old Standard TT', serif;
+    font-style: italic;
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.8); /* Highlight box to make it punchy */
+    padding: 5px 15px;
+    letter-spacing: 1px;
+}
+
+.cta-container {
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    font-family: 'VT323', monospace;
+    padding: 15px 35px;
+    font-size: 26px;
+    border-radius: 4px;
+    border: 2px solid #00ffff;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.steam-btn {
+    color: #00ffff;
+    background-color: rgba(10, 10, 14, 0.9);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+.steam-btn:hover {
+    background-color: #00ffff;
+    color: #0a0a0e;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.6);
+}
+
+/* --- Footer Styles --- */
+footer {
+    background-color: #000;
+    border-top: 2px solid #001217;
+    padding: 25px 0;
+    color: #66d9ef;
+    font-family: 'VT323', monospace;
+    font-size: 18px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 40px;
+}
+
+footer a {
+    color: #00ffff;
+}
+
+footer a:hover {
+    text-shadow: 0 0 8px #00ffff;
+}
