@@ -36,12 +36,23 @@ header {
     padding: 0 40px;
 }
 
-.studio-logo {
-    font-family: 'VT323', monospace; 
-    font-size: 36px;
-    font-weight: normal;
-    color: #00ffff; 
-    text-shadow: 0 0 10px rgba(0, 255, 255, 0.6); 
+/* --- Updated Header Image Styles --- */
+.studio-logo-img {
+    height: 45px; /* Adjust this value depending on the exact proportions of dfd_small.png */
+    width: auto;
+    display: block;
+    filter: drop-shadow(0 0 5px rgba(0, 255, 255, 0.4)); /* Optional: keeps a subtle cyber glow around the image */
+}
+
+/* --- New Game Title h1 Styles --- */
+.game-title {
+    font-family: 'Old Standard TT', serif; /* Keeps the creepy analog vibe */
+    font-size: 72px; /* Nice and large */
+    color: #f0f0f0;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    text-shadow: 0 8px 20px rgba(0, 0, 0, 0.9); /* Makes it pop off the background */
 }
 
 .contact-link {
