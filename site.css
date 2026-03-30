@@ -80,7 +80,7 @@ header {
 .dl-hero {
     /* Set this to your grungy paper texture image */
     background-color: #121214; 
-    background-image: url('dl_logo.png'); 
+    background-image: url('dl_logo.webp'); 
     background-size: cover;
     background-position: center;
     border: 15px solid #000; 
